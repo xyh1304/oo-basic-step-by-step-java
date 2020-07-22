@@ -1,7 +1,6 @@
 package practice10;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class Teacher extends Person{
     private LinkedList<Klass> classes;

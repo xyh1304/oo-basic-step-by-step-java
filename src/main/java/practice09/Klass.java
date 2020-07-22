@@ -18,8 +18,8 @@ public class Klass {
         }
     }
 
-    public Student appendMember(Student student) {
-        return student;
+    public void appendMember(Student student) {
+        student.getKlass().setNumber(this.number);
     }
 
     public int getNumber() {
@@ -32,5 +32,9 @@ public class Klass {
 
     public Student getLeader() {
         return leader;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 }
