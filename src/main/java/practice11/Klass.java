@@ -20,10 +20,10 @@ public class Klass{
             System.out.print("It is not one of us.\n");
         }else {
             this.leader = student;
+            this.joinListeners.forEach( listener -> {
+                listener.updateLeader(student);
+            });
         }
-        this.joinListeners.forEach( listener -> {
-            listener.updateLeader(student);
-        });
     }
 
     public void appendMember(Student student) {
