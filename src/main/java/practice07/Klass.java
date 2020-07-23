@@ -6,7 +6,7 @@ public class Klass {
 
     public Klass(int number) {
         this.number = number;
-        this.displayName = "Class 2";
+        this.displayName = "Class " + this.number;
     }
 
 
